@@ -1,15 +1,28 @@
+* {
+  margin: 0px
+}
+
 body {
   margin: 0;
   padding: 0;
   height: auto;
   width: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
   background: #F5F1F1;
   font-family: "Lato", sans-serif;
 }
 
-p {
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+* p {
   text-indent: 50px;
 }
+
 .bannertext {
   font-size: 30px;
   color: white;
@@ -178,3 +191,9 @@ ul.info-list-1 {
   margin-bottom: 60px;
   font-family: Oxygen, sans-serif;
 }
+
+@media screen and (min-width: 768px) {
+  #adv-search {
+    width: 200px;
+    margin: 0 auto;
+  }
