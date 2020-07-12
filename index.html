@@ -7,74 +7,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Portfolio Landingpage</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="part1">
-      <div class="row">
-        <div class="bannertext">
-          <img src="css/assets/logo1.png">
-          <h1><span class="has-first-color">Howdy,</span> I'm Walter Siameto.</h1>
-          <h3>A Full Stack Web Developer<br>And I Love to Code.</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="part2">
-      <div class="row">
-        <div class="abouttext">
-          <h2><span class="has-first-color1">About</span> Us</h2>
-          <img src="css/assets/mypic.png" height="200px width=" 200"">
-          <p style="font-size:30px;font-weight:bold;">Who's this guy?</p>
-          <p>I'm a Front-End Developer and a student at Moringa School.I grew up in Narok but living in Nairobi,Kenya.<br>
-            I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p><br>
-          <p>I enjoy a cup of cofee, watching movies & tv shows.<BR>Playing video games or do anything music related</p>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="part3">
-      <div class="row">
-
-        <div class="fourth-text">
-          <h2><span class="has-first-color1">Contact</span> Us</h2>
-          <div class="col-md-4"></div>
-          <div class="col-md-4">s
+<div class="container">
+      <div class="part1">
+        <div class="row">
+          <div class="bannertext">
+            <img src="css/assets/logo1.png">
+            <h1><span class="has-first-color">Howdy,</span> I'm Walter Siameto.</h1>
+            <h3>A Full Stack Web Developer<br>And I Love to Code.</h3>
           </div>
         </div>
-        <div class="col-md-4"></div>
       </div>
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
+
+      <div class="part2">
+        <div class="row">
+          <div class="abouttext">
+            <h2><span class="has-first-color1">About</span> Us</h2>
+            <img src="css/assets/mypic.png" height="200px width=" 200"">
+            <p style="font-size:30px;font-weight:bold;">Who's this guy?</p>
+            <p>I'm a Front-End Developer and a student at Moringa School.I grew up in Narok but living in Nairobi,Kenya.<br>
+              I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p><br>
+            <p>I enjoy a cup of cofee, watching movies & tv shows.<BR>Playing video games or do anything music related</p>
+            <ul class="info-list-1">
+
+          </div>
+        </div>
       </div>
+      <!--start my project section-->
+
+        <h2><span class="has-first-color2">My</span> Projects</h2>
+        <div class="content-wrapper">
+          <div class="portfolio-items-wrapper">
+
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(css/assets/slider3.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="subtitle">I built the Quip Ecommerce </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(css/assets/aboutme.jpeg)"></div>
+              <div class="img-text-wrapper">
+                <div class="subtitle">Delani Studio.</div>
+              </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+              <div class="portfolio-img-background" style="background-image:url(css/assets/slider2.jpg)"></div>
+              <div class="img-text-wrapper">
+                <div class="subtitle"><a href="#">delani</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <!--project sectio-->
+
+
+      <!-- Yet Another Section contact us-->
+      <section class="contact_section">
+        <h2><span class="has-first-color1">Contact</span> Us</h2>
+        <p id="header">Have a question or want to work together?</p>
+        <div class="contact-container">
+          <form id="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" name="name" placeholder="Full Name">
+            <label for="name">Your Email</label>
+            <input type="email" name="email" placeholder="Email Address">
+            <label for="name">Your Message</label>
+            <textarea name="content" id="contact-content" placeholder="Your Message..."></textarea>
+            <input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit">
+          </form>
+        </div>
+      </section>
     </div>
-
-
-
-    <!-- Yet Another Section contact us-->
-    <section class="contact_section">
-      <h2><span class="has-first-color1">Contact</span> Us</h2>
-      <p id="header">Have a question or want to work together?</p>
-      <div class="contact-container">
-        <form id="contact-form">
-          <label for="name">Your Name</label>
-          <input type="text" name="name" placeholder="Full Name">
-          <label for="name">Your Email</label>
-          <input type="email" name="email" placeholder="Email Address">
-          <label for="name">Your Message</label>
-          <textarea name="content" id="contact-content" placeholder="Your Message..."></textarea>
-        <input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit">
-        </form>
-      </div>
-    </section>
-  </div>
 </body>
+
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });
+  });
+</script>
 
 </html>
