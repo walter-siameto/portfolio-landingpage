@@ -80,6 +80,21 @@ h2 {
 
 }
 
+.skills{
+  background: url(assets/slider2.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 320px;
+}
+
+.skillstext {
+  color: black;
+  text-align: center;
+  background: transparent;
+  font-size-adjust: auto;
+
+}
 .general_layout {
   height: 100%;
   width: 80%;
