@@ -57,7 +57,7 @@ h2 {
   background: url(assets/slider2.jpg) no-repeat;
   background-position: center;
   background-size: cover;
-  height: 720px;
+  height: 620px;
 }
 
 .part2 {
@@ -77,6 +77,7 @@ h2 {
   text-align: center;
   background: transparent;
   font-size-adjust: auto;
+
 }
 
 .general_layout {
@@ -99,8 +100,8 @@ a:hover {
 
 }
 
-h3 {
-  font-size: 20px;
+h4{
+  font-size: 40px;
   font-weight: bold;
 }
 
