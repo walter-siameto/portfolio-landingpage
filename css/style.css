@@ -52,7 +52,9 @@ h2 {
   font-size: 3.371rem;
   text-align: center;
 }
-
+h5{
+  padding:8px;
+}
 .part1 {
   background: url(assets/slider2.jpg) no-repeat;
   background-position: center;
@@ -95,6 +97,9 @@ h2 {
   font-size-adjust: auto;
   padding: 30px;
 
+}
+.checked {
+  color: #c32865;
 }
 .general_layout {
   height: 100%;
