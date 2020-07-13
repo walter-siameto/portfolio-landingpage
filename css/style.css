@@ -81,7 +81,7 @@ h2 {
 }
 
 .skills{
-  background: url(assets/slider2.jpg) no-repeat;
+  background: url(assets/slider3.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -89,10 +89,11 @@ h2 {
 }
 
 .skillstext {
-  color: black;
+  color: #fff;
   text-align: center;
   background: transparent;
   font-size-adjust: auto;
+  padding: 30px;
 
 }
 .general_layout {
